@@ -26,13 +26,14 @@
 
             height: 100%;
 
+            margin: 3em auto;
             /*background-color: #282828;*/
-            background-color: #1C1B1D;
+            /*background-color: whitesmoke;*/
             /*background-color: rgba(36, 35, 37);*/
-            color: azure;
+            color: black;
             max-width: 70%;
             width: 70%;
-            margin: auto;
+            /*margin: auto;*/
 
             /*background-image: url("images/favicon.png");*/
             /*background-repeat: repeat;*/
@@ -47,7 +48,7 @@
 
         header {
             margin-top: 1em;
-            background-color: white;
+            /*background-color: whitesmoke;*/
         }
 
         nav {
@@ -63,7 +64,7 @@
             color: white;
         }
         main {
-            background-color: #1C1B1D;
+            /*background-color: whitesmoke;*/
             height: 100%;
         }
 
@@ -75,11 +76,21 @@
         }
 
         .icon {
-            color: white;
+            color: #343434;
+            margin-left: 0.3em;
+            /*width: 1.5em;*/
+        }
+        img.icon {
+          width: 1.5em;
+          margin-bottom: -0.5em;
         }
         @media (max-width: 700px) {
             .icon {
                 font-size: 5vw;
+            }
+            img.icon {
+              width: 1.5em;
+              margin-bottom: -0.5em;
             }
         }
         @media (min-width: 700px) {
@@ -184,7 +195,7 @@
             position: absolute;
             top: -35px;
             left: -10px;
-            background-color: #1C1B1D;
+            background-color: white;
             padding: 0 0.3em;
         }
         section img {
@@ -249,14 +260,14 @@
         }
 
         a:link {
-            color: whitesmoke;
+            color: #2b2b2b;
         }
         a:visited {
             color: grey;
         }
 
         .release-info a:link {
-            color: whitesmoke;
+            /*color: whitesmoke;*/
         }
         .release-info a:visited {
             color: grey;
@@ -283,36 +294,41 @@
             height: 100px !important;
         }
 
+        .sales {
+            display: inline-block;
+            width: 45%;
+        }
+
     </style>
 </head>
 <body>
 
-<div id="sm">
-    <a href="https://soundcloud.com/another-alias">
-        <span class="fa fa-soundcloud icon" aria-hidden="true"></span>
-    </a>
-    <a href="https://www.facebook.com/whiteofmyeyes/">
-        <i class="fa fa-facebook icon" aria-hidden="true"></i>
-    </a>
-</div>
+<!--<div id="sm">-->
+    <!--<a href="https://soundcloud.com/another-alias">-->
+        <!--<span class="fa fa-soundcloud icon" aria-hidden="true"></span>-->
+    <!--</a>-->
+    <!--<a href="https://www.facebook.com/whiteofmyeyes/">-->
+        <!--<i class="fa fa-facebook icon" aria-hidden="true"></i>-->
+    <!--</a>-->
+<!--</div>-->
 <header>
     <img src="images/header.png" alt="" width="15%">
     <!--<h1>White of My Eyes</h1>-->
     <img src="images/whiteofmyeyes3.png" alt="" width="80%">
 </header>
 <!--<nav>-->
-    <!--<label for="show-menu" class="show-menu"><i class="fa fa-bars" aria-hidden="true"></i></label>-->
-    <!--<input type="checkbox" id="show-menu" role="button">-->
-    <!--<ul id="menu">-->
-        <!--<li><a href="#">releases</a></li>-->
-        <!--<li><a href="#">artists</a></li>-->
-        <!--<li><a href="#">about</a></li>-->
-        <!--<li><a href="#">contact</a></li>-->
-    <!--</ul>-->
+<!--<label for="show-menu" class="show-menu"><i class="fa fa-bars" aria-hidden="true"></i></label>-->
+<!--<input type="checkbox" id="show-menu" role="button">-->
+<!--<ul id="menu">-->
+<!--<li><a href="#">releases</a></li>-->
+<!--<li><a href="#">artists</a></li>-->
+<!--<li><a href="#">about</a></li>-->
+<!--<li><a href="#">contact</a></li>-->
+<!--</ul>-->
 <!--</nav>-->
 <main>
     <section>
-        <h1>releases</h1>
+        <h1>Releases</h1>
         <div class="release-images" ontouchstart="this.classList.toggle('hover');">
             <div class="flipper">
                 <div class="front">
@@ -330,17 +346,37 @@
                 in a collection of his most original works, true to his style and outlining his perspective on
                 contemporary techno with busy percussion and irregular synth work.
             </p>
-            <p>
-                Pre-Orders:
-            </p>
-            <p>
-                <a href="http://www.juno.co.uk/products/another-alias-swine-of-the-month-ep/637677-01/">Juno Records</a>
-                <br/>
-                <a href="http://www.deejay.de/Another_Alias_Swine_Of_The_Month_Ep_WOME001_Vinyl__257464">Deejay.de</a>
-                <br/>
-                <a href="https://anotheralias.bandcamp.com/releases">Bandcamp</a>
-
-            </p>
+            <div class="sales">
+                <p>
+                    Buy Digital:
+                </p>
+                <p>
+                    <a href="https://www.beatport.com/label/white-of-my-eyes/61010">Beatport</a>
+                    <br/>
+                    <a href="https://anotheralias.bandcamp.com/releases">Bandcamp</a>
+                    <br/>
+                    <a href="http://www.junodownload.com/products/another-alias-swine-of-the-month/3325435-02/">Juno</a>
+                    <br/>
+                    <a href="https://www.trackitdown.net/recordlabel/164336/white-of-my-eyes.html">Trackitdown</a>
+                    <br/>
+                    <a href="https://clone.nl/digital/item3325435.html">Clone Digital</a>
+                    <br/>
+                </p>
+            </div>
+            <div class="sales">
+                <p>Buy Vinyl:</p>
+                <p>
+                    <a href="http://www.juno.co.uk/products/another-alias-swine-of-the-month-ep/637677-01/">Juno Records</a>
+                    <br/>
+                    <a href="http://www.deejay.de/Another_Alias_Swine_Of_The_Month_Ep_WOME001_Vinyl__257464">Deejay.de</a>
+                    <br/>
+                    <a href="http://www.decks.de/t/another_alias-swine_of_the_month_ep/c8w-xz">Decks.de</a>
+                    <br/>
+                    <a href="http://www.discopiu.com/detail.aspx?ida=125093">Disco Piu</a>
+                    <br/>
+                    <br/
+                </p>
+            </div>
             <!--<iframe width="100%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/304460671&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>-->
         </div>
         <div style="display: block; position: relative; top: 50px; height: 1px">
@@ -348,7 +384,7 @@
         </div>
     </section>
     <section>
-        <h1>artists</h1>
+        <h1>Artists</h1>
         <div class="release-images">
             <img src="images/dermojpg" alt="">
         </div>
@@ -360,6 +396,10 @@
                 </a>
                 <a href="https://www.facebook.com/notanotheralias/">
                     <i class="fa fa-facebook icon" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.residentadvisor.net/dj/anotheralias">
+                    <img  class="icon" src="images/ra.png">
+                    <!--<img src="images/ra.ico" width="3em"/>-->
                 </a>
             </p>
             <p>
@@ -383,21 +423,30 @@
 
     </section>
     <!--<section>-->
-        <!--<h1>about</h1>-->
-        <!--<div class="release-info">-->
-            <!--<p>-->
-                <!--some info about the label-->
-            <!--</p>-->
-        <!--</div>-->
+    <!--<h1>about</h1>-->
+    <!--<div class="release-info">-->
+    <!--<p>-->
+    <!--some info about the label-->
+    <!--</p>-->
+    <!--</div>-->
     <!--</section>-->
     <section class="contact">
-        <h1>contact</h1>
+        <h1>Contact</h1>
         <div class="">
             <p>
-                Contact: <a href="mailto:dermot@whiteofmyeyes.com">dermot@whiteofmyeyes.com</a>
+                Contact: <a href="mailto:dermot@whiteofmyeyes.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
             </p>
             <p>
-                Bookings: <a href="mailto:max(at)rawagency.org">max@rawagency.org</a>
+                Bookings: max(at)rawagency.org <a href="https://www.raw-booking.com/another-alias">RAW Agency</a>
+            </p>
+            <p>
+              Artwork: <a href="https://www.lenamacka.com/">Macka</a>
+            </p>
+            <p>
+              Vinyl Distribution: <a href="http://www.straight-distribution.com/htdocs/c3view.php">Straight</a>
+            </p>
+            <p>
+              Digital Distribution: <a href="http://digdis.de/startseite/">DigDis</a>
             </p>
             <p>
                 Social Media:
@@ -407,13 +456,16 @@
                 <a href="https://www.facebook.com/whiteofmyeyes/">
                     <i class="fa fa-facebook icon" aria-hidden="true"></i>
                 </a>
+                <a href="https://www.youtube.com/channel/UCBf_Afbarc4-TeMc8QClzwA">
+                    <i class="fa fa-youtube-play icon" aria-hidden="true"></i>
+                </a>
             </p>
         </div>
     </section>
 
     <!--<section class="tracks">-->
-        <!--<h1>tracks</h1>-->
-        <!--<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/252320907&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>-->
+    <!--<h1>tracks</h1>-->
+    <!--<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/252320907&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>-->
     <!--</section>-->
 </main>
 
