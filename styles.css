@@ -1,0 +1,179 @@
+html {
+    height: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    height: 100%;
+    margin: 3em auto;
+    width: 70%;
+    max-width: 1200px;
+    color: black;
+}
+
+header {
+    margin-top: 1em;
+}
+
+main {
+    height: 100%;
+    margin: 3em auto;
+    width: 100%;
+}
+
+section {
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    padding-top: 2em;
+    border-top: 1px solid red;
+    position: relative;
+
+}
+section h1 {
+    margin-left: 1em;
+    position: absolute;
+    top: -35px;
+    left: -10px;
+    background-color: white;
+    padding: 0 0.3em;
+}
+
+section h2 {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+}
+
+.release-images {
+    width: 25%;
+    height: 300px;
+    perspective: 1000px;
+    float: left;
+}
+.release-images img {
+    width: 100%;
+}
+.release-images:hover .flipper, .release-images.hover .flipper {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+.front, .back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+}
+
+.release-info {
+    padding-left: 4em;
+    margin-left: 15%;
+    width: 70%;
+}
+
+.sales {
+    display: inline-block;
+    /*width: 30%;*/
+    margin: 1em;
+    /*margin-left: 5em;*/
+}
+
+a:link {
+    color: #2b2b2b;
+}
+
+a:visited {
+    color: grey;
+}
+
+.icon {
+    color: #343434;
+    margin-left: 0.3em;
+    /*width: 1.5em;*/
+}
+img.icon {
+    width: 1.5em;
+    margin-bottom: -0.5em;
+}
+
+.dermo {
+    margin-right: 2em;
+}
+
+.contact-section {
+    height: 50%;
+    margin-top: 1em;
+}
+
+@media (min-width: 1200px) {
+    .sales {
+        width: 40%;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        width: 100%;
+    }
+    section {
+        width: 100%;
+        height: 100%;
+    }
+    /*.release-images, .release-images .front, .release-images .back {*/
+        /*width: 40%;*/
+        /*!*height: 180px;*!*/
+        /*!*min-height: 35%;*!*/
+        /*max-height: 150px;*/
+        /*max-width: 100%;*/
+        /*!*float: left;*!*/
+    /*}*/
+    .release-images {
+        /*max-height: 100px;*/
+        width: 30%;
+        max-width: 30%;
+        height: 22%;
+    }
+    .release-images img {
+        max-height: 200px;
+    }
+    .release-info {
+        margin: 0;
+        padding-left: 2em;
+        width: 80%;
+    }
+    .sales {
+        /*float: left;*/
+        margin: 1em;
+        /*width: 35%;*/
+    }
+}
+
+@media (max-width: 340px) {
+    .sales {
+        margin: 0;
+    }
+}
