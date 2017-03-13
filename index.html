@@ -124,6 +124,7 @@
         <div class="">
             <p>
                 Contact: <a href="" id="dermot"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                <noscript>Javascript required to display email address</noscript>
             </p>
             <p>
                 Bookings: <a href="mailto:max@rawagency.org"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
@@ -153,6 +154,16 @@
         </div>
     </section>
 </main>
+
+<script>
+    setEmail("dermot", "whiteofmyeyes.com")
+    function setEmail(prefix, suffix) {
+        console.log("setEmail Function")
+        var link = document.getElementById("dermot");
+        var start = "mailto:"
+        link.setAttribute("href", start+prefix+"@"+suffix)
+    }
+</script>
 
 </body>
 </html>
