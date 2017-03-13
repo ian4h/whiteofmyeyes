@@ -24,8 +24,9 @@ main {
 section {
     width: 90%;
     height: 70%;
+    min-height: 600px;
     margin: auto;
-    padding-top: 2em;
+    padding-top: 2em;   
     border-top: 1px solid red;
     position: relative;
 
