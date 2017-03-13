@@ -24,7 +24,7 @@ main {
 section {
     width: 90%;
     height: 70%;
-    min-height: 650px;
+    min-height: 700px;
     margin: auto;
     padding-top: 2em;   
     border-top: 1px solid red;
