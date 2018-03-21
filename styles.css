@@ -23,14 +23,17 @@ main {
 
 section {
     width: 90%;
-    height: 70%;
-    min-height: 700px;
+    /*min-height: 1300px;*/
     margin: auto;
     padding-top: 2em;   
     border-top: 1px solid red;
     position: relative;
-
 }
+
+.releases {
+    height: 1400px
+}
+
 section h1 {
     margin-left: 1em;
     position: absolute;
@@ -156,7 +159,7 @@ img.icon {
         /*max-height: 100px;*/
         width: 30%;
         max-width: 30%;
-        height: 22%;
+        height: 110px;
     }
     .release-images img {
         max-height: 200px;
@@ -170,6 +173,10 @@ img.icon {
         /*float: left;*/
         margin: 1em;
         /*width: 35%;*/
+    }
+
+    .releases {
+        height: 1500px
     }
 }
 
